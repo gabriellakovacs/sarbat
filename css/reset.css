@@ -34,6 +34,7 @@ a, a:hover, a:active, a:visited {
 	color: inherit;
 }
 
-ul {
+ul, p, h1, h2, h3, li, header {
 	padding: 0;
+	margin: 0;
 }

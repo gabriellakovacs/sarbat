@@ -1,0 +1,90 @@
+$backgroundColor : #121212;
+
+$mainFontColor: #fff;
+$secondaryFontColor: #757575;
+
+$mainFont : Montserrat;
+$secondaryFont :"Noto-Sans";
+
+$headerImg: url("../img/header-background.png");
+
+
+* {
+	box-sizing: border-box;
+	//border: 1px solid white;
+}
+
+body {
+	background: $backgroundColor;
+	color: $mainFontColor;
+	font-family: $mainFont;
+	width: 1920px;
+	margin:0;
+}
+
+h1 {
+	font-family: Neptune;
+	font-size: 180pt;
+	padding:0;
+	text-align:center;
+}
+h2 {
+	font-size: 36pt;
+	font-weight: bold;
+}
+h3 {
+	font-size: 26pt;
+	font-weight: bold;
+}
+
+header {
+	height: 1080px;
+	padding-top:230px;
+	background-image: $headerImg;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+header p {
+		font-family:$secondaryFont;
+		font-style: italic;
+		border-top: 1px solid white;
+		display:inline;
+		font-size: 18pt;
+}
+
+li {
+	display: inline-block;
+}
+.container {
+	margin-left: 375px;
+	margin-right: 375px;
+}
+
+.services li {
+	width: 33%;
+	margin-top:92px;
+}
+.services .firstRow {
+	margin-top:0;
+}
+.services p {
+	color: $secondaryFontColor;
+	font-family: $secondaryFont;
+	font-size: 14pt;
+}
+.services img {
+	border-bottom: 1px solid $secondaryFontColor;
+	padding-bottom: 18px;
+}
+.services h2 {
+	margin-bottom:56px;
+}
+.services h3 {
+	margin-top:30px;
+	margin-bottom:24px;
+}
+.services {
+	padding-top:97px;
+	padding-bottom:124px;
+	border: 1px solid white;
+}
