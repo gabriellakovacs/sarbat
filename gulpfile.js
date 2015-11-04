@@ -1,8 +1,8 @@
 // Gulpfile.js
 
 var gulp = require("gulp"),
-    uglify = require("gulp-uglify"),
-    concat = require("gulp-concat"),
+    // uglify = require("gulp-uglify"),
+    // concat = require("gulp-concat"),
     sass = require('gulp-sass');
  
 
@@ -15,7 +15,7 @@ gulp.task('sass', function () {
  
 
 //compile sass files on the go
-gulp.task('sass:watch', function () {
+gulp.task('sasswatch', function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
