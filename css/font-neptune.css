@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Neptune';
+  src: url('Neptune.woff2') format('woff2'),
+       url('Neptune.woff') format('woff'),
+       url('Neptune.ttf') format('truetype');
+}
