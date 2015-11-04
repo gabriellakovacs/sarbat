@@ -36,9 +36,17 @@ a, a:hover, a:active, a:visited {
 	color: inherit;
 }
 
-ul, p, h1, h2, h3, li, header, section {
+p, h1, h2, h3, li, header, section {
 	padding: 0;
 	margin: 0;
 	-webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
+    -webkit-padding-start: 0px;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-padding-start: 0px;
 }
