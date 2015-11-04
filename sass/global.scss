@@ -79,6 +79,14 @@ li {
 	//padding-right: 187.5px;
 }
 
+sup {
+	color: $secondaryFontColor;
+	font-family: $secondaryFont;
+	font-size: 13px;
+	font-style: italic;
+	position:relative;
+}
+
 header{
 	height: 540px;
 	background-image: $headerImg;
@@ -153,11 +161,10 @@ header{
 	width: 185px;
 	margin-right:5px;
 	margin-top:21px;
-	position:relative;
 	}
 
 		.separator {
-		margin-top:120px; 
+		margin-top:120px; //ez miert nem mukodik???????????
 		display:block;
 		width: 100px;
 		height: 1px;
@@ -172,12 +179,7 @@ header{
 		}
 
 		sup {
-		color: $secondaryFontColor;
-		font-family: $secondaryFont;
-		font-size: 13px;
-		font-style: italic;
-		position:absolute;
-		top:5px;
+		top:-17px;
 		}
 
 		h3 {
@@ -197,66 +199,97 @@ header{
 	padding-top:41px;
 	padding-bottom:43px;
 	@include gradient;
+
+	h2 {
+	margin-bottom:30px;
+	}
+
+	li {
+	width: 24%;
+	}
 }
 
-.clients li {
-	width: 24%;
-}
+
 
 .pricing {
 	padding-top:51px;
 	padding-bottom:65px;
-}
-.pricing h2 {
-	margin-bottom:26px;
+
+	h2 {
+		margin-bottom:26px;
+	}
+
+	.box {
+		display: inline-block;
+		width:125px;
+		height:305px;
+		margin-right:15px;
+		border: 2px solid $secondaryFontColor;
+		padding: 15px;
+		position:relative;
+	}
+
+		h3 {
+			//margin-top:15px;
+			margin-bottom:12px;
+		}
+
+		.priceTag {
+			text-align:right;
+			position:relative;
+			margin-bottom:12px;
+		}
+
+			.number {
+				font-size: 36px;
+				font-weight: bold;
+				padding-bottom:15px;
+				font-style:normal;
+			}
+
+			sup {
+				top:-9px;
+				left:3px;
+			}
+
+		.separator {
+			display:block;
+			width: 95px;
+			height: 1px;
+			@include gradient;	
+		}
+
+		li {
+			color: $secondaryFontColor;
+			font-family: $secondaryFont;
+			font-size: 7px;
+			line-height:13px;
+			width:100%;
+		}
+
+		li:first-child {
+			padding-top:15px;
+		}
+
+			span{
+				color: $mainFontColor;
+				font-style: italic;
+			}
+		ul {
+		margin-bottom:20px;
+		}
+
+		a {
+		display:block;
+			padding-top:16px; //????????????????????????????/
+			//padding-bottom:10px;
+			text-align:center;
+			font-size:7px;
+			font-weight:bold;
+		}
 }
 
-.pricing div {
-	display: inline-block;
-	width:125px;
-	height:305px;
-	margin-right:15px;
-	border: 2px solid $secondaryFontColor;
-	padding: 15px;
-	position:relative;
-}
 
-.pricing h3 {
-	//margin-top:15px;
-	margin-bottom:12px;
-}
-.pricing .number {
-	font-size: 36px;
-	font-weight: bold;
-	float:right;
-	padding-bottom:15px;
-
-}
-.pricing li:first-child {
-	padding-top:15px;
-	border-top:2px solid red;
-}
-.pricing li {
-	color: $secondaryFontColor;
-	font-family: $secondaryFont;
-	font-size: 7px;
-	line-height:13px;
-	width:100%;
-}
-.pricing li span{
-	color: $mainFontColor;
-	font-style: italic;
-}
-.pricing div a {
-	position: absolute;
-	bottom:0;
-	padding-top:10px;
-	padding-bottom:10px;
-	text-align:center;
-	display:inline-block;
-	width:95px;
-	border-top: 2px solid red;
-}
 
 
 .skills {
