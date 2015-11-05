@@ -11,7 +11,8 @@ body {
   background: #121212;
   color: #fff;
   font-family: Montserrat;
-  margin: 0; }
+  margin: 0;
+  font-size: 7px; }
 
 h1 {
   padding-top: 200px;
@@ -123,7 +124,14 @@ header {
   .clients h2 {
     margin-bottom: 30px; }
   .clients li {
-    width: 24%; }
+    width: 142px;
+    margin-top: 35px; }
+    .clients li a {
+      position: relative;
+      top: -9px;
+      font-size: 10px; }
+    .clients li img {
+      width: 25px; }
 
 .pricing {
   padding-top: 51px;

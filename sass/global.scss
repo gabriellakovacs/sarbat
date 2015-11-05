@@ -45,6 +45,7 @@ body {
 	color: $mainFontColor;
 	font-family: $mainFont;
 	margin:0;
+	font-size:7px;
 }
 .outsideContainer {
 	//width: 960px;
@@ -193,8 +194,21 @@ header{
 	}
 
 	li {
-	width: 24%;
+		width:142px;
+		margin-top:35px;
+
+		a {
+			position:relative;
+			top:-9px;
+			font-size:10px;
+			}
+
+		img{
+			width:25px;
+		}
 	}
+
+
 }
 
 .pricing {
