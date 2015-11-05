@@ -87,6 +87,41 @@ header {
     margin-top: 15px;
     margin-bottom: 12px; }
 
+.gallery {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  .gallery .grid-item {
+    width: 19.8%;
+    display: inline-block;
+    padding: 1px;
+    vertical-align: top; }
+  .gallery img {
+    width: 100%;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1); }
+  .gallery a {
+    display: block;
+    text-align: center;
+    width: 485px;
+    margin: auto;
+    height: 25px;
+    background: -webkit-linear-gradient(left, #802775, #dc071e);
+    background: -o-linear-gradient(right, #802775, #dc071e);
+    background: -moz-linear-gradient(right, #802775, #dc071e);
+    background: linear-gradient(to right, #802775, #dc071e);
+    padding-top: 10px;
+    margin-top: 70px; }
+  .gallery img:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0); }
+
 .process {
   padding-top: 67px;
   padding-bottom: 60px; }

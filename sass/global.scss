@@ -23,12 +23,12 @@ $red: #dc071e;
   background: linear-gradient(to right, $leftColor , $rightColor); 
   }
 
-  .secondaryText {
-  	color: $secondaryFontColor;
+.secondaryText {
+	color: $secondaryFontColor;
 	font-family: $secondaryFont;
 	font-size: 7px;
 	line-height:13px;
-  }
+}
 
 
 section {
@@ -78,8 +78,6 @@ li {
 .container {
 	width:585px;
 	margin:auto;
-	//padding-left: 187.5px;
-	//padding-right: 187.5px;
 }
 
 sup {
@@ -145,6 +143,48 @@ header{
 	h3 {
 	margin-top:15px;
 	margin-bottom:12px;
+	}
+}
+
+.gallery {
+	width:100%;
+	margin:0;
+	padding:0;
+
+	.grid-item { 
+		width:19.8%;
+		//border:1px solid white;
+		display:inline-block;
+		padding:1px;
+		vertical-align:top;
+		}
+
+	img{
+		width:100%;
+		filter: grayscale(1);
+		-webkit-filter: grayscale(1);
+		-moz-filter: grayscale(1);
+		-o-filter: grayscale(1);
+		-ms-filter: grayscale(1);
+		}
+	
+	a {
+		display:block;
+		text-align:center;
+		width:485px;
+		margin:auto;
+		height:25px;
+		@include gradient;
+		padding-top:10px;
+		margin-top:70px;
+		}
+	img:hover {
+	//opacity:1;
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-ms-filter: grayscale(0);
 	}
 }
 
