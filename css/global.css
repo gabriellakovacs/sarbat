@@ -1,3 +1,9 @@
+.secondaryText {
+  color: #757575;
+  font-family: "Noto Sans";
+  font-size: 7px;
+  line-height: 13px; }
+
 * {
   box-sizing: border-box; }
 
@@ -6,15 +12,6 @@ body {
   color: #fff;
   font-family: Montserrat;
   margin: 0; }
-
-.outsideContainer {
-  width: 960px; }
-
-.outsideContainer .lastCol {
-  margin-right: 0; }
-
-body div .firstRow {
-  margin-top: 0; }
 
 h1 {
   padding-top: 200px;
@@ -88,11 +85,6 @@ header {
   .services h3 {
     margin-top: 15px;
     margin-bottom: 12px; }
-  .services p {
-    color: #757575;
-    font-family: "Noto Sans";
-    font-size: 7px;
-    line-height: 13px; }
 
 .process {
   padding-top: 67px;
@@ -120,11 +112,6 @@ header {
   .process h3 {
     margin-top: 12px;
     margin-bottom: 11px; }
-  .process p {
-    color: #757575;
-    font-family: "Noto Sans";
-    font-size: 7px;
-    line-height: 13px; }
 
 .clients {
   padding-top: 41px;
@@ -145,7 +132,7 @@ header {
     margin-bottom: 26px; }
   .pricing .box {
     display: inline-block;
-    width: 125px;
+    width: 131px;
     height: 305px;
     margin-right: 15px;
     border: 2px solid #757575;
@@ -157,11 +144,6 @@ header {
     text-align: right;
     position: relative;
     margin-bottom: 12px; }
-  .pricing .number {
-    font-size: 36px;
-    font-weight: bold;
-    padding-bottom: 15px;
-    font-style: normal; }
   .pricing sup {
     top: -9px;
     left: 3px; }
@@ -197,6 +179,58 @@ header {
   background: #000;
   padding-top: 65px;
   padding-bottom: 75px; }
+  .skills h2 {
+    margin-bottom: 28px; }
+  .skills li {
+    width: 142px;
+    padding-top: 20px;
+    font-size: 13px;
+    border: 1px solid white;
+    position: relative; }
+  .skills ul {
+    margin-bottom: 122px; }
+  .skills .percentage {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .skills sup {
+    top: -10px; }
+
+.testimonials div {
+  display: inline-block;
+  width: 290px;
+  position: relative; }
+
+.testimonials h3 {
+  position: absolute;
+  top: 5px;
+  left: 60px;
+  width: 220px; }
+
+.testimonials p {
+  position: absolute;
+  left: 60px;
+  top: 25px;
+  color: #fff;
+  font-style: italic; }
+
+.testimonials .circle {
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #cacaca;
+  margin-bottom: 10px;
+  margin-right: 10px; }
+
+.testimonials .separator {
+  width: 50px;
+  margin-bottom: 20px; }
+
+.testimonials span {
+  font-weight: bold; }
 
 .blog {
   padding-top: 55px;
@@ -222,3 +256,23 @@ footer {
   padding-bottom: 20px;
   text-align: center;
   background: #E67A7A; }
+
+.outsideContainer .number {
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  font-style: normal; }
+
+.outsideContainer .separator {
+  display: block;
+  height: 1px;
+  background: -webkit-linear-gradient(left, #802775, #dc071e);
+  background: -o-linear-gradient(right, #802775, #dc071e);
+  background: -moz-linear-gradient(right, #802775, #dc071e);
+  background: linear-gradient(to right, #802775, #dc071e); }
+
+.outsideContainer .lastCol {
+  margin-right: 0; }
+
+.outsideContainer .firstRow {
+  margin-top: 0; }

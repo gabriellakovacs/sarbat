@@ -5,9 +5,10 @@ $skillsBackground: #000;
 $mainFontColor: #fff;
 $secondaryFontColor: #757575;
 
+$circleColor: #cacaca;
 
-$mainFont : Montserrat;
-$secondaryFont :"Noto Sans";
+$mainFont: Montserrat;
+$secondaryFont:"Noto Sans";
 
 $headerImg: url("../img/header-background.png");
 
@@ -20,6 +21,13 @@ $red: #dc071e;
   background: -o-linear-gradient(right, $leftColor , $rightColor); 
   background: -moz-linear-gradient(right, $leftColor , $rightColor); 
   background: linear-gradient(to right, $leftColor , $rightColor); 
+  }
+
+  .secondaryText {
+  	color: $secondaryFontColor;
+	font-family: $secondaryFont;
+	font-size: 7px;
+	line-height:13px;
   }
 
 
@@ -39,16 +47,10 @@ body {
 	margin:0;
 }
 .outsideContainer {
-	width: 960px;
+	//width: 960px;
 }
 
-.outsideContainer .lastCol {
-	margin-right:0;
-}
 
-body div .firstRow {
-	margin-top:0;
-}
 
 h1 {
 	padding-top:200px;
@@ -143,13 +145,6 @@ header{
 	margin-top:15px;
 	margin-bottom:12px;
 	}
-
-	p {
-	color: $secondaryFontColor;
-	font-family: $secondaryFont;
-	font-size: 7px;
-	line-height:13px;
-	}
 }
 
 .process {
@@ -186,13 +181,6 @@ header{
 		margin-top:12px;
 		margin-bottom:11px;
 		}
-
-		p {
-		color: $secondaryFontColor;
-		font-family: $secondaryFont;
-		font-size: 7px;
-		line-height:13px;
-		}
 }
 
 .clients {
@@ -209,8 +197,6 @@ header{
 	}
 }
 
-
-
 .pricing {
 	padding-top:51px;
 	padding-bottom:65px;
@@ -221,7 +207,7 @@ header{
 
 	.box {
 		display: inline-block;
-		width:125px;
+		width:131px;
 		height:305px;
 		margin-right:15px;
 		border: 2px solid $secondaryFontColor;
@@ -239,13 +225,6 @@ header{
 			position:relative;
 			margin-bottom:12px;
 		}
-
-			.number {
-				font-size: 36px;
-				font-weight: bold;
-				padding-bottom:15px;
-				font-style:normal;
-			}
 
 			sup {
 				top:-9px;
@@ -296,7 +275,84 @@ header{
 	background:$skillsBackground;
 	padding-top:65px;
 	padding-bottom:75px;
+
+	h2 {
+	margin-bottom:28px;
+	}
+
+	li {
+	width:142px;
+	padding-top:20px;
+	font-size:13px;
+	border: 1px solid white;
+	position:relative;
+	}
+	ul {
+	margin-bottom:122px;
+	}
+
+	.percentage {
+	display:inline-block;
+	position:absolute;
+	right:0;
+	top:0;
+	}
+
+	sup {
+	top:-10px;
+	}
+
+
+
+	
 }
+
+
+.testimonials {
+	div {
+	display:inline-block;
+	width: 290px;
+	position:relative;
+	}
+
+	h3 {
+	position:absolute;
+	top:5px;
+	left:60px;
+	width:220px;
+	}
+
+	p {
+	position:absolute;
+	left:60px;
+	top:25px;
+	color:$mainFontColor;
+	font-style:italic;
+	}
+
+	.circle {
+	width:50px;
+	height:50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius:50px;
+	background:$circleColor;
+	margin-bottom:10px;
+	margin-right:10px;
+	}
+
+	.separator {
+	width:50px;
+	margin-bottom:20px;
+	}
+
+	span {
+	font-weight: bold;
+	}
+}
+
+
+
 .blog {
 	padding-top:55px;
 	padding-bottom:70px;
@@ -327,3 +383,27 @@ footer {
 	text-align: center;
 	background: $clientBackground;
 }
+
+.outsideContainer {
+	.number {
+			font-size: 36px;
+			font-weight: bold;
+			padding-bottom:15px;
+			font-style:normal;
+		}
+
+	.separator {
+			display:block;
+			height: 1px;
+			@include gradient;	
+		}
+
+	.lastCol {
+		margin-right:0;
+	}
+
+	.firstRow {
+		margin-top:0;
+	}
+}
+
