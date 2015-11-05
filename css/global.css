@@ -233,29 +233,77 @@ header {
   font-weight: bold; }
 
 .blog {
-  padding-top: 55px;
+  padding-top: 51px;
   padding-bottom: 70px; }
+  .blog h2 {
+    margin-bottom: 40px; }
+  .blog .featuredPost {
+    display: inline-block;
+    width: 290px;
+    padding-left: 150px; }
+  .blog .separator {
+    width: 45px;
+    margin-top: 6px;
+    margin-bottom: 12px; }
+  .blog sup {
+    top: -10px; }
+  .blog a {
+    font-weight: bold;
+    font-size: 7px; }
+
+.socialMedia {
+  border-top: 2px solid #757575;
+  border-bottom: 2px solid #757575;
+  height: 44px;
+  position: relative; }
+  .socialMedia li {
+    width: 24.6%;
+    margin: auto;
+    text-align: center; }
+  .socialMedia img {
+    padding-top: 11px;
+    padding-bottom: 10px; }
+  .socialMedia a {
+    position: absolute;
+    top: -2px;
+    width: 24.6%;
+    height: 44px;
+    display: inline-block; }
+  .socialMedia a:hover {
+    background: -webkit-linear-gradient(left, #802775, #dc071e);
+    background: -o-linear-gradient(right, #802775, #dc071e);
+    background: -moz-linear-gradient(right, #802775, #dc071e);
+    background: linear-gradient(to right, #802775, #dc071e); }
 
 .contactUs {
   padding-top: 60px;
   padding-bottom: 65px; }
-
-.socialMedia li {
-  width: 24.8%;
-  margin: auto;
-  text-align: center; }
-
-.socialMedia ul {
-  border-top: 2px solid #757575;
-  border-bottom: 2px solid #757575;
-  padding-top: 11px;
-  padding-bottom: 10px; }
+  .contactUs .contactLeft {
+    width: 290px;
+    display: inline-block; }
+  .contactUs .contactSub {
+    width: 142px;
+    display: inline-block; }
+  .contactUs form {
+    width: 290px;
+    display: inline-block; }
+  .contactUs input, .contactUs textarea {
+    background: #121212;
+    border: none; }
+  .contactUs label {
+    font-style: italic;
+    line-height: 25px;
+    width: 100%;
+    border-bottom: 1px solid #757575; }
 
 footer {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  background: #E67A7A; }
+  background: -webkit-linear-gradient(left, #802775, #dc071e);
+  background: -o-linear-gradient(right, #802775, #dc071e);
+  background: -moz-linear-gradient(right, #802775, #dc071e);
+  background: linear-gradient(to right, #802775, #dc071e); }
 
 .outsideContainer .number {
   font-size: 36px;

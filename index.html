@@ -273,13 +273,19 @@
 			<section class="blog container">
 				<h2>Latest Posts</h2>
 
-				05 Feb
-				This is blog heading, and it is long.
-				Read Now
+				<section class="featuredPost">
+					<span class="number">05</span> <sup>Feb</sup>
+					<div class="separator"></div>
+					<h3>This is blog heading, and it is long.</h3>
+					<a>Read Now</a>
+				</section>
 
-				29 Dec
-				This is blog heading, and it is really long.
-				Read Now
+				<section class="featuredPost">
+					<span class="number">29</span> <sup>Dec</sup>
+					<div class="separator"></div>
+					<h3>This is blog heading, and it is really long.</h3>
+					<a>Read Now</a>
+				</section>
 
 
 			</section>
@@ -294,26 +300,43 @@
 			</div>
 
 			<section class="contactUs container">
-				<h3>Mail Us</h3>
-				<p>VishnuSathyan@outlook.com<p/><a>www.vthed.com</a>
+				<div class="contactLeft">
 
-				<h3>Reach Us</h3>
-				<address>12th Kuthampully Street & PO.,Ernakulam Dt., Kuthampully,Kerala. IN. PIN 689 597</address>
+					<h3>Sarbat is colorful!</h3>
+					<p class="secondaryText">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-				<h3>Sarbat is colorful!</h3>
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="contactSub">
+						<h3>Mail Us</h3>
+						<p class="secondaryText">VishnuSathyan&at;outlook.com<p/><a>www.vthed.com</a>
+					</div>
 
-				<button>CONTACT NOW</button>
+					<div class="contactSub">
+						<h3>Reach Us</h3>
+						<address class="secondaryText">12th Kuthampully Street & PO.,Ernakulam Dt., Kuthampully,Kerala. IN. PIN 689 597</address>
+					</div>
+				</div>
 
 				<form>
-					Name
-					<input type="text" name="name" required>
-					Email
-					<input type="email" name="email" required>
-					Subject
-					<input type="text" name="subject" required>
-					Message
-					<textarea name="message" required></textarea>
+					<label for="name" class="secondaryText">
+						Name
+						<input type="text" id="name" name="name" required>
+					</label>
+					<br>
+					<label for="email" class="secondaryText">
+						Email
+						<input type="email" id="email" name="email" required>
+					</label>
+					<br>
+					<label for="subject" class="secondaryText">
+						Subject
+						<input type="text" id="subject" name="subject" required>
+					</label>
+					<br>
+					<label for="message" class="secondaryText">
+						Message
+						<textarea name="message" id="message" required></textarea>
+					</label>
+					<input type="submit" value="Contact Now">
 				</form>
 
 			</section>
