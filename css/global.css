@@ -225,9 +225,10 @@ header {
   .skills h2 {
     margin-bottom: 28px; }
   .skills li {
-    width: 142px;
+    width: 131px;
     font-size: 13px;
-    position: relative; }
+    position: relative;
+    margin-right: 15px; }
   .skills ul {
     margin-bottom: 122px; }
   .skills canvas {
