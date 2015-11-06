@@ -50,3 +50,10 @@ ul {
     -webkit-margin-after: 0em;
     -webkit-padding-start: 0px;
 }
+
+address {
+	font-style:normal;
+}
+input {
+	font: inherit;
+}
