@@ -20,10 +20,21 @@ h1 {
   font-size: 90px;
   text-align: center;
   padding-left: 15px; }
+  @media (max-width: 750px) {
+    h1 {
+      padding-top: 90px; } }
+  @media (max-width: 600px) {
+    h1 {
+      padding-left: 0;
+      font-size: 70px;
+      padding-top: 95px; } }
 
 h2 {
   font-size: 18px;
   font-weight: bold; }
+  @media (max-width: 600px) {
+    h2 {
+      text-align: center; } }
 
 h3 {
   font-size: 13px;
@@ -35,6 +46,9 @@ li {
 .container {
   width: 585px;
   margin: auto; }
+  @media (max-width: 600px) {
+    .container {
+      width: 300px; } }
 
 sup {
   color: #757575;
@@ -49,6 +63,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  @media (max-width: 750px) {
+    header {
+      height: 300px; } }
   header img {
     margin-top: 20px;
     border: 1px solid #fff;
@@ -67,6 +84,10 @@ header {
     font-size: 9px;
     line-height: 13px;
     letter-spacing: 0.4px; }
+    @media (max-width: 600px) {
+      header p {
+        margin-left: 135px;
+        letter-spacing: 0px; } }
   header nav {
     height: 540px;
     width: 300px;
@@ -89,10 +110,17 @@ header {
   padding-bottom: 62px; }
   .services h2 {
     margin-bottom: 28px; }
+    @media (max-width: 600px) {
+      .services h2 {
+        margin-bottom: 0; } }
   .services li {
     width: 185px;
     margin-right: 5px;
     margin-top: 46px; }
+    @media (max-width: 600px) {
+      .services li {
+        width: 100%;
+        text-align: center; } }
   .services img {
     border-bottom: 1px solid #757575;
     width: 35px;
@@ -112,6 +140,12 @@ header {
     float: left;
     width: 20%;
     posotopn: relative; }
+    @media (max-width: 750px) {
+      .gallery .grid-item, .gallery .grid-sizer {
+        width: 25%; } }
+    @media (max-width: 600px) {
+      .gallery .grid-item, .gallery .grid-sizer {
+        width: 33.3%; } }
   .gallery .grid-item {
     overflow: hidden;
     padding-left: 4px; }
@@ -142,6 +176,9 @@ header {
     background: linear-gradient(to right, #802775, #dc071e);
     padding-top: 10px;
     margin-top: 70px; }
+    @media (max-width: 750px) {
+      .gallery a {
+        width: 90%; } }
   .gallery .caption {
     position: absolute;
     bottom: -20px;
@@ -175,16 +212,23 @@ header {
     width: 185px;
     margin-right: 5px;
     margin-top: 21px; }
+    @media (max-width: 600px) {
+      .process div {
+        width: 100%;
+        text-align: center; } }
   .process .separator {
-    margin-top: 120px;
+    margin-top: 8px;
     display: block;
     width: 100px;
     height: 1px;
     background: -webkit-linear-gradient(left, #802775, #dc071e);
     background: -o-linear-gradient(right, #802775, #dc071e);
     background: -moz-linear-gradient(right, #802775, #dc071e);
-    background: linear-gradient(to right, #802775, #dc071e);
-    margin-top: 0; }
+    background: linear-gradient(to right, #802775, #dc071e); }
+    @media (max-width: 600px) {
+      .process .separator {
+        margin: auto;
+        margin-top: 8px; } }
   .process span {
     font-size: 34pt;
     font-weight: bold; }
@@ -206,6 +250,9 @@ header {
   .clients li {
     width: 142px;
     margin-top: 35px; }
+    @media (max-width: 600px) {
+      .clients li {
+        padding-left: 30px; } }
     .clients li a {
       position: relative;
       top: -9px;
@@ -226,6 +273,14 @@ header {
     border: 2px solid #757575;
     padding: 15px;
     position: relative; }
+    @media (max-width: 600px) {
+      .pricing .box {
+        display: block;
+        width: 200px;
+        margin: auto;
+        margin-bottom: 15px;
+        padding-left: 49px;
+        padding-right: 49px; } }
   .pricing h3 {
     margin-bottom: 12px; }
   .pricing .priceTag {
@@ -273,10 +328,18 @@ header {
     font-size: 13px;
     position: relative;
     margin-right: 15px; }
+    @media (max-width: 600px) {
+      .skills li {
+        display: block;
+        margin: auto;
+        margin-top: 60px; } }
   .skills ul {
     margin-bottom: 122px; }
   .skills canvas {
     padding-bottom: 20px; }
+    @media (max-width: 600px) {
+      .skills canvas {
+        padding-left: 23px; } }
   .skills .percentage {
     display: inline-block;
     position: absolute;
@@ -330,6 +393,9 @@ header {
     display: inline-block;
     width: 290px;
     padding-left: 140px; }
+    @media (max-width: 600px) {
+      .blog .featuredPost {
+        margin-bottom: 15px; } }
   .blog img {
     position: absolute;
     left: 0;
@@ -364,6 +430,8 @@ header {
     margin-left: -2px; }
   .socialMedia li:first-child {
     border-left: none; }
+  .socialMedia li:last-child {
+    border-right: none; }
   .socialMedia img {
     width: 25px; }
   .socialMedia a {
@@ -413,8 +481,9 @@ header {
     background: transparent; }
   .contactUs label {
     font-style: italic;
-    line-height: 25px;
-    width: 284px;
+    line-height: 25px; }
+  .contactUs .formLine {
+    width: 100%;
     border-bottom: 1px solid #757575; }
   .contactUs .contactButton {
     float: right;
@@ -425,6 +494,9 @@ header {
     background: -o-linear-gradient(right, #802775, #dc071e);
     background: -moz-linear-gradient(right, #802775, #dc071e);
     background: linear-gradient(to right, #802775, #dc071e); }
+    @media (max-width: 600px) {
+      .contactUs .contactButton {
+        width: 290px; } }
 
 footer {
   padding-top: 20px;
@@ -449,8 +521,10 @@ footer {
   background: -moz-linear-gradient(right, #802775, #dc071e);
   background: linear-gradient(to right, #802775, #dc071e); }
 
-.outsideContainer .lastCol {
-  margin-right: 0; }
+@media (min-width: 600px) {
+  .outsideContainer .lastCol {
+    margin-right: 0; } }
 
-.outsideContainer .firstRow {
-  margin-top: 0; }
+@media (min-width: 600px) {
+  .outsideContainer .firstRow {
+    margin-top: 0; } }

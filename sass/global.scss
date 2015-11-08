@@ -1,59 +1,16 @@
-$backgroundColor: #121212;
-$clientBackground: #E67A7A;
-$skillsBackground: #000;
-
-$mainFontColor: #fff;
-$secondaryFontColor: #757575;
-
-$circleColor: #cacaca;
-
-$mainFont: Montserrat;
-$secondaryFont:"Noto Sans";
-
-$headerImg: url("../img/header-background.png");
-
-
-$purple: #802775;
-$red: #dc071e;
-
-@mixin gradient($leftColor:$purple, $rightColor:$red) {
-  background: -webkit-linear-gradient(left, $leftColor , $rightColor); 
-  background: -o-linear-gradient(right, $leftColor , $rightColor); 
-  background: -moz-linear-gradient(right, $leftColor , $rightColor); 
-  background: linear-gradient(to right, $leftColor , $rightColor); 
-  }
-
-@mixin captionTransition ($time:300ms) {
-	-webkit-transition: all $time ease-out;
-	-moz-transition: all $time ease-out;
-	-o-transition: all $time ease-out;
-	-ms-transition: all $time ease-out;	
-	transition: all $time ease-out;
-    }
-
-@mixin captionShow {
-	-moz-transform: translateY(-100%);
-	-o-transform: translateY(-100%);
-	-webkit-transform: translateY(-100%);
-	opacity: 1;
-	transform: translateY(-100%);
-}
+@import "variables";
+@import "mixins";
 
 .secondaryText {
 	color: $secondaryFontColor;
 	font-family: $secondaryFont;
-	font-size: 7px;
-	line-height:13px;
+	font-size: $secondaryFontSize;
+	line-height:$secondaryTextLinehight;
 }
 
-
-section {
-	//border: 1px solid white;
-}
 
 * {
 	box-sizing: border-box;
-	//border: 1px solid white;
 }
 
 body {
@@ -63,24 +20,28 @@ body {
 	margin:0;
 	font-size:7px;
 }
-.outsideContainer {
-	//width: 960px;
-}
-
-
 
 h1 {
 	padding-top:200px;
-	font-family: Neptune;
+	font-family: $mainHeaderFont;
 	font-size: 90px;
 	text-align:center;
 	padding-left:15px;
-	//letter-spacing: 9px;
-	
+	@media (max-width: $medium) {
+    	padding-top:90px;
+  	}
+  	@media (max-width: $small) {
+    	padding-left:0;
+    	font-size: 70px;
+    	padding-top:95px;
+  	}
 }
 h2 {
 	font-size: 18px;
 	font-weight: bold;
+	@media (max-width: $small) {
+    	text-align:center;
+  	}
 }
 h3 {
 	font-size: 13px;
@@ -94,6 +55,9 @@ li {
 .container {
 	width:585px;
 	margin:auto;
+	@media (max-width: $small) {
+    	width:300px;
+  	}
 }
 
 sup {
@@ -110,6 +74,10 @@ header{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	@media (max-width: $medium) {
+    height:300px;
+  	}
+
 
 	img {
 		margin-top:20px;
@@ -131,6 +99,10 @@ header{
 		font-size: 9px;
 		line-height: 13px;
 		letter-spacing:0.4px;
+		@media (max-width: $small) {
+	    	margin-left:135px;
+	    	letter-spacing:0px;
+	  	}
 	}
 
 	nav {
@@ -148,7 +120,6 @@ header{
 	padding-top:3vh;
 	padding-bottom:3vh;
 	}
-
 }
 
 .services {
@@ -157,12 +128,19 @@ header{
 
 	h2 {
 	margin-bottom:28px;
+	@media (max-width: $small) {
+		margin-bottom:0;
+	}
 	}
 
 	li {
 	width: 185px;
 	margin-right:5px;
 	margin-top:46px;
+	@media (max-width: $small) {
+		width: 100%;
+    	text-align:center;
+  	}
 	}
 
 	img {
@@ -189,6 +167,12 @@ header{
     float:left;
     width:20%;
     posotopn:relative;
+    @media (max-width: $medium) {
+    	width:25%;
+  	}
+  	@media (max-width: $small) {
+    	width:33.3%;
+  	}
     }
 
     .grid-item {
@@ -222,6 +206,9 @@ header{
 		@include gradient;
 		padding-top:10px;
 		margin-top:70px;
+		@media (max-width: $medium) {
+		width: 90%;
+  	}
 		}
 	.caption{
 		position:absolute;
@@ -257,16 +244,23 @@ header{
 	width: 185px;
 	margin-right:5px;
 	margin-top:21px;
+	@media (max-width: $small) {
+		width: 100%;
+    	text-align:center;
+  	}
 	}
 
+
 		.separator {
-		margin-top:120px; //ez miert nem mukodik???????????
+		margin-top:8px;
 		display:block;
 		width: 100px;
 		height: 1px;
 		@include gradient;
-		margin-top:0;
-		
+		@media (max-width: $small) {
+			margin:auto;
+	    	margin-top:8px;
+  		}
 		}
 
 		span {
@@ -290,13 +284,15 @@ header{
 	@include gradient;
 
 	h2 {
-	margin-bottom:30px;
-	}
-
+		margin-bottom:30px;
+		}
+	
 	li {
 		width:142px;
 		margin-top:35px;
-
+		@media (max-width: $small) {
+			padding-left: 30px;
+  		}
 		a {
 			position:relative;
 			top:-9px;
@@ -325,6 +321,15 @@ header{
 		border: 2px solid $secondaryFontColor;
 		padding: 15px;
 		position:relative;
+		@media (max-width: $small) {
+			display:block;
+			width:200px;
+			margin:auto;
+			margin-bottom:15px;
+			padding-left:49px;
+			padding-right:49px;
+  		}
+
 	}
 
 		h3 {
@@ -369,7 +374,7 @@ header{
 		}
 
 		a {
-		display:block;
+			display:block;
 			padding-top:16px; //????????????????????????????/
 			//padding-bottom:10px;
 			text-align:center;
@@ -391,15 +396,22 @@ header{
 	width:131px;
 	font-size:13px;
 	position:relative;
-	//border:1px solid white;
 	margin-right:15px;
+	@media (max-width: $small) {
+		display:block;
+    	margin:auto;
+    	margin-top:60px;
+  		}
 	}
+
 	ul {
 	margin-bottom:122px;
 	}
 	canvas {
 	padding-bottom:20px;
-	
+	@media (max-width: $small) {
+		padding-left:23px;
+		}
 	}
 
 
@@ -408,6 +420,9 @@ header{
 	position:absolute;
 	right:0;
 	bottom:-3px;
+	@media (max-width: $small) {
+  			
+  		}
 	}
 
 	sup {
@@ -471,6 +486,9 @@ header{
 	display:inline-block;
 	width: 290px;
 	padding-left:140px;
+	@media (max-width: $small) {
+    	margin-bottom:15px;
+  	}
 	}
 
 	img {
@@ -521,6 +539,9 @@ header{
 	li:first-child {
 		border-left:none;
 		}
+	li:last-child {
+		border-right:none;
+	}
 
 	img {
 		width:25px;
@@ -591,7 +612,10 @@ header{
 	label {
 	font-style: italic;
 	line-height:25px;
-	width: 284px;
+	
+	}
+	.formLine {
+	width:100%;
 	border-bottom: 1px solid $secondaryFontColor;
 	}
 
@@ -601,6 +625,9 @@ header{
 	height:25px;
 	width:85px;
 	@include gradient;
+	@media (max-width: $small) {
+    	width:290px;
+  	}
 	}
 }
 
@@ -626,11 +653,15 @@ footer {
 		}
 
 	.lastCol {
-		margin-right:0;
+		@media (min-width: $small) {
+    		margin-right:0;
+  		}
 	}
 
 	.firstRow {
-		margin-top:0;
+		@media (min-width: $small) {
+    		margin-top:0;
+  		}
 	}
 }
 
