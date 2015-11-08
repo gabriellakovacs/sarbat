@@ -23,6 +23,22 @@ $red: #dc071e;
   background: linear-gradient(to right, $leftColor , $rightColor); 
   }
 
+@mixin captionTransition ($time:300ms) {
+	-webkit-transition: all $time ease-out;
+	-moz-transition: all $time ease-out;
+	-o-transition: all $time ease-out;
+	-ms-transition: all $time ease-out;	
+	transition: all $time ease-out;
+    }
+
+@mixin captionShow {
+	-moz-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	opacity: 1;
+	transform: translateY(-100%);
+}
+
 .secondaryText {
 	color: $secondaryFontColor;
 	font-family: $secondaryFont;
@@ -176,9 +192,13 @@ header{
     }
 
     .grid-item {
-    
+    overflow:hidden;
     padding-left:4px;
     
+    }
+
+    .grid-item:hover .caption {
+    @include captionShow;
     }
 
 	img{
@@ -191,7 +211,6 @@ header{
 		-moz-filter: grayscale(1);
 		-o-filter: grayscale(1);
 		-ms-filter: grayscale(1);
-		z-index:13;
 		}
 	
 	a {
@@ -204,15 +223,16 @@ header{
 		padding-top:10px;
 		margin-top:70px;
 		}
-		.caption{
+	.caption{
 		position:absolute;
-		bottom:4px;
+		bottom:-20px;
 		padding-top:8px;
 		padding-bottom:8px;
 		@include gradient;
-		width:98%;
-		z-index:1;
+		width:100%;
 		text-align:center;
+		@include captionTransition;
+		opacity:0;
 		}
 
 	img:hover {
