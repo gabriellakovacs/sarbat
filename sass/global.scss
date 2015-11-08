@@ -153,18 +153,20 @@ header{
 
     .grid-item, .grid-sizer {
     float:left;
-    width:210px;
-    
+    width:20%;
+    posotopn:relative;
     }
 
 	img{
 		width:100%;
-		border:2px solid transparent;
+		border-left:4px solid transparent;
+		border-bottom:3px solid transparent;
 		filter: grayscale(1);
 		-webkit-filter: grayscale(1);
 		-moz-filter: grayscale(1);
 		-o-filter: grayscale(1);
 		-ms-filter: grayscale(1);
+		z-index:13;
 		}
 	
 	a {
@@ -184,7 +186,9 @@ header{
 	-moz-filter: grayscale(0);
 	-o-filter: grayscale(0);
 	-ms-filter: grayscale(0);
+	
 	}
+
 }
 
 .process {
@@ -246,8 +250,6 @@ header{
 			width:25px;
 		}
 	}
-
-
 }
 
 .pricing {
@@ -319,9 +321,6 @@ header{
 		}
 }
 
-
-
-
 .skills {
 	background:$skillsBackground;
 	padding-top:65px;
@@ -358,7 +357,6 @@ header{
 	top:-10px;
 	}	
 }
-
 
 .testimonials {
 	div {
@@ -403,8 +401,6 @@ header{
 	}
 }
 
-
-
 .blog {
 	padding-top:51px;
 	padding-bottom:70px;
@@ -414,9 +410,16 @@ header{
 	}
 
 	.featuredPost {
+	position:relative;
 	display:inline-block;
 	width: 290px;
-	padding-left:150px;
+	padding-left:140px;
+	}
+
+	img {
+	position:absolute;
+	left:0;
+	width:120px;
 	}
 
 	.separator {
@@ -431,11 +434,12 @@ header{
 	}
 
 	a {
+	display:block;
 	font-weight:bold;
 	font-size:7px;
+	margin-top:10px;
 	}
 }
-
 
 .socialMedia {
 	border-top: 2px solid $secondaryFontColor;
@@ -476,9 +480,6 @@ header{
 	a:hover {
 	@include gradient;
 	}
-}
-.socialMedia ul {
-	
 }
 
 .contactUs {
@@ -545,7 +546,6 @@ header{
 	@include gradient;
 	}
 }
-
 
 footer {
 	padding-top:20px;

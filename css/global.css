@@ -93,15 +93,18 @@ header {
   padding: 0; }
   .gallery .grid-item, .gallery .grid-sizer {
     float: left;
-    width: 210px; }
+    width: 20%;
+    posotopn: relative; }
   .gallery img {
     width: 100%;
-    border: 2px solid transparent;
+    border-left: 4px solid transparent;
+    border-bottom: 3px solid transparent;
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
     -moz-filter: grayscale(1);
     -o-filter: grayscale(1);
-    -ms-filter: grayscale(1); }
+    -ms-filter: grayscale(1);
+    z-index: 13; }
   .gallery a {
     display: block;
     text-align: center;
@@ -280,9 +283,14 @@ header {
   .blog h2 {
     margin-bottom: 40px; }
   .blog .featuredPost {
+    position: relative;
     display: inline-block;
     width: 290px;
-    padding-left: 150px; }
+    padding-left: 140px; }
+  .blog img {
+    position: absolute;
+    left: 0;
+    width: 120px; }
   .blog .separator {
     width: 45px;
     margin-top: 6px;
@@ -290,8 +298,10 @@ header {
   .blog sup {
     top: -10px; }
   .blog a {
+    display: block;
     font-weight: bold;
-    font-size: 7px; }
+    font-size: 7px;
+    margin-top: 10px; }
 
 .socialMedia {
   border-top: 2px solid #757575;
