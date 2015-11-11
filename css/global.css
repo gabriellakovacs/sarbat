@@ -452,9 +452,7 @@ footer {
 
 @media (min-width: 600px) {
   .outsideContainer .lastCol {
-    margin-right: 0; } }
-
-@media (min-width: 600px) {
+    margin-right: 0; }
   .outsideContainer .firstRow {
     margin-top: 0; } }
 

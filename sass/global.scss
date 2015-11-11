@@ -576,15 +576,16 @@ footer {
 }
 
 @media (min-width: $small) {
-	.lastCol {
-		margin-right:0;
-	}
+	.outsideContainer{
+		.lastCol {
+			margin-right:0;
+		}
 
-	.firstRow {
-    	margin-top:0;
+		.firstRow {
+	    	margin-top:0;
+		}
 	}
 }	
-  		}
 
 @media (max-width: $medium) {
 	h1{
@@ -599,8 +600,7 @@ footer {
 	.gallery a {
 		width: 90%;
 	}
-    	
-  	}
+}
 
 @media (max-width: $small) {
 	h1 {
