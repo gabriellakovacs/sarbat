@@ -168,7 +168,8 @@ header {
 
 .process {
   padding-top: 67px;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  clear: both; }
   .process div {
     display: inline-block;
     width: 185px;
