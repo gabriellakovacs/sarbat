@@ -141,7 +141,8 @@ header {
     background: -moz-linear-gradient(right, #802775, #dc071e);
     background: linear-gradient(to right, #802775, #dc071e);
     padding-top: 10px;
-    margin-top: 70px; }
+    margin-top: 70px;
+    clear: both; }
   .gallery .caption {
     position: absolute;
     bottom: -20px;
