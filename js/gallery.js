@@ -1,4 +1,4 @@
-$(function(){
+$('.grid').imagesLoaded( function() {
 	$('.grid').masonry({
 		// set itemSelector so .grid-sizer is not used in layout
 		itemSelector: '.grid-item',
@@ -6,4 +6,5 @@ $(function(){
 		columnWidth: '.grid-sizer',
 		percentPosition: true
 	})
-})
+});
+
