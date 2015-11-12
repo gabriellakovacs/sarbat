@@ -1,9 +1,10 @@
 // Gulpfile.js
 
 var gulp = require("gulp"),
-    // uglify = require("gulp-uglify"),
-    // concat = require("gulp-concat"),
-    sass = require('gulp-sass');
+    uglify = require("gulp-uglify"),
+    concat = require("gulp-concat"),
+    sass = require('gulp-sass'),
+    imagemin = require('gulp-imagemin');
  
 
  //compile sass files
@@ -21,9 +22,16 @@ gulp.task('sasswatch', function () {
 
 
 //concatenate and minify css files
-gulp.task("minify", function() {
-  return gulp.src("./src/css/*.css")
+gulp.task("conmin", function() {
+  return gulp.src("./css/*.css")
     .pipe(concat("all.css"))
     .pipe(uglify())
-    .pipe(gulp.dest("./dist/"));
+    .pipe(gulp.dest("./css/"));
+});
+
+//compress images
+gulp.task("image", function() {
+  return gulp.src("./img/*")
+    .pipe(imagemin())
+    .pipe(gulp.dest("./img_compressed"));
 });
